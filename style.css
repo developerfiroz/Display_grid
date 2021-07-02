@@ -1,0 +1,36 @@
+.calbody{
+	width: 960px;
+	margin: 0 auto;
+	border:none;
+	background: rgb(206, 201, 201);
+}
+.container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	border-radius:5px ;
+	padding: 0px 5px;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.tran{
+	background-color: gray;
+	border-radius:5px ;
+	font-family: sans-serif;
+	transition: .5s ease all;
+}
+.tran:hover{
+	background-color: deeppink;
+	cursor: default;
+ transform: scale(1.5);
+}
+img{
+	width: 300px; height: 250px;
+}
+.div1{
+	background-image: url(img/image01.jpg);
+	width:950px ; height: 360px;
+	background-position: center; background-size: cover;
+	grid-column-start:1; grid-column-end:4;
+}
+.div1:hover{ opacity:.5;  transform: scale(1);}
